@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
@@ -27,4 +28,34 @@ table {
 /* Revert the 'white-space' property for textarea elements on Safari */
     textarea {
     white-space: revert;
+}
+
+:root{
+    --maincolor: #0a9ef4;
+    --textcolor: #049fff;
+    --db: #025c91;
+    --lightb: #73c7f8;
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+*::selection{
+    background: var(--maincolor);
+}
+
+header{
+    background-image: url('image/header_img.PNG');
+    color: var(--lightb);
+    text-align: center;
+    padding: 30px;
+}
+
+header h1{
+    font-size: x-large;
+    color: var(--textcolor);
+    font-weight: bold;
 }
