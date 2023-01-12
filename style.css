@@ -30,6 +30,7 @@ table {
     white-space: revert;
 }
 
+/* 1. Adding variables */
 :root{
     --maincolor: #afeaf8;
     --textcolor: #049fff;
@@ -38,17 +39,19 @@ table {
     --shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* 2. Setting the font for the entire file and adding delay to everything that has a transition */
 *{
     font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
     transition: all .5s;
 }
 
+/* 3. Changing color of selection and selected text*/
 *::selection{
     background: var(--db);
     color: #fff;
 }
 
+/* 4. Adding an image, centering and adding color to text*/
 header{
     background-image: url('image/header_img.PNG');
     color: var(--lightb);
@@ -56,6 +59,7 @@ header{
     height: 130px;
 }
 
+/* 5. Setting large bold text, changing color and padding*/
 header h1{
     font-size: x-large;
     color: var(--textcolor);
@@ -67,6 +71,7 @@ body{
     background-color: var(--maincolor);
 }
 
+/* 6. Navigation menu, which after scrolling is always at the top of the screen*/
 navbar{
     position: sticky;
     display: flex;
@@ -86,6 +91,7 @@ navbar a{
     cursor: pointer;
 }
 
+/* 7. Hovering over menu sections will change the color of the text and add a stroke*/
 a:hover {
     color: var(--db);
     border-bottom: 1.5px solid;
@@ -95,6 +101,7 @@ article{
     margin: 15px;
 }
 
+/* 8. Adding numbering for all lists*/
 article ul ol li{ 
     margin-left: 30px;
     list-style: decimal;
@@ -115,10 +122,12 @@ section img{
     display: block;
 }
 
+/* 9. Adding a shadow to all picturess*/
 img{
     box-shadow: var(--shadow);
 }
 
+/* 10. After hovering over the image, it moves*/
 img:hover{
     transform: translateY(-4px);
 }
@@ -134,6 +143,7 @@ aside h1{
     margin-bottom: 5px;
 }
 
+/* 11. The footer is always at the bottom of the screen (position: fixed;)*/
 footer{
     background-color: var(--lightb);
     text-align: center;
