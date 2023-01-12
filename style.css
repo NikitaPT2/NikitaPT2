@@ -31,10 +31,11 @@ table {
 }
 
 :root{
-    --maincolor: #0a9ef4;
+    --maincolor: #afeaf8;
     --textcolor: #049fff;
     --db: #025c91;
     --lightb: #73c7f8;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 *{
@@ -44,7 +45,8 @@ table {
 }
 
 *::selection{
-    background: var(--maincolor);
+    background: var(--db);
+    color: #fff;
 }
 
 header{
@@ -58,4 +60,32 @@ header h1{
     font-size: x-large;
     color: var(--textcolor);
     font-weight: bold;
+}
+
+body{
+    background-color: var(--maincolor);
+}
+
+navbar{
+    position: sticky;
+    display: flex;
+    background: var(--lightb);
+    box-shadow: var(--shadow);
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+    padding: 10px 7%;
+}
+
+navbar a{
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--db);
+    border-bottom: 1.5px solid;
 }
